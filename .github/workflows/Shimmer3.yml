@@ -14,4 +14,4 @@ jobs:
         uses: bojieyang/indexnow-action@v3
         with:
           sitemap-location: 'https://www.Shimmer3.cn/index.php/sitemap.xml'
-          key: ${{ secrets.INDEXNOW_KEY }}
+          key: ${{ secrets.INDEXNOWSHIMMER3 }}
