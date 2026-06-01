@@ -1,0 +1,17 @@
+name: 'IndexNowShimmer'
+
+on:
+  schedule:
+    # 每天北京时间上午 10:00 自动运行 (UTC 2:00)
+    - cron: '0 2 * * *'
+  workflow_dispatch: # 允许手动点击按钮立即触发
+
+jobs:
+  check-and-submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: indexnow-shimmer3-action
+        uses: bojieyang/indexnow-action@v3
+        with:
+          sitemap-location: 'https://www.Shimmer3.cn/index.php/sitemap.xml'
+          key: ${{ secrets.IndexNowShimmer3 }}
