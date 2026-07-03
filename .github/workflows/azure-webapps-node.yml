@@ -14,4 +14,4 @@ jobs:
         uses: bojieyang/indexnow-action@v3
         with:
           sitemap-location: 'https://openbci-cn.com/sitemap.xml'
-          key: ${{ secrets.INDEXNOW_KEY }}
+          key: ${{ secrets.INDEXNOWOPENBCI }}
